@@ -10,7 +10,7 @@
 body {
   font-family: "Roboto", "Raleway", sans-serif;
   color: var(--brand-color-text);
-  width: 1600px;
+  width: 100%;
 }
 
 ul {
@@ -98,6 +98,15 @@ p {
   color: var(--brand-color-header);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
+}
+
+.nav-list-link.agency {
+  color: var(--brand-color);
+}
+
+.nav-list-link.agency::after {
+  width: 100%;
+  background-color: var(--brand-color);
 }
 
 .nav-list-link::after {
@@ -222,15 +231,17 @@ p {
   background-color: #fff;
   cursor: initial;
   margin: auto;
+  padding: 8px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 4px;
+display: flex;
+justify-content: flex-end;
 }
 
 .modal-button-close {
   width: 30px;
   height: 30px;
   padding: 6px;
-  margin-top: 8px;
   border-radius: 50%;
   background-color: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -494,6 +505,15 @@ border-radius: 4px;
 }
 
 /* Portfolio */
+
+.nav-list-link.portfolio {
+  color: var(--brand-color);
+}
+
+.nav-list-link.portfolio::after {
+  width: 100%;
+  background-color: var(--brand-color);
+}
 
 .buttons-list {
   list-style-type: none;
